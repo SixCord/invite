@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>You're being redirected...</title>
+    <title>You're being redirected....</title>
     <link rel="stylesheet" href="/style.css" />
     
 </head>
@@ -12,11 +12,8 @@
         <h1>You're being redirected...</h1>
         
         <script>
-var windowObjectReference;
-var windowFeatures = "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes";
-
-function openRequestedPopup() {
-  windowObjectReference = window.open("https://discord.com/api/oauth2/authorize?client_id=801858968845680731&permissions=8&scope=bot", "CNN_WindowName", windowFeatures);
+  function openRequestedPopup () {
+  window.open("example.com", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");
 }
         </script>
     </body>
