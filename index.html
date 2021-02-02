@@ -51,12 +51,25 @@
 
     <body id="body">
         <h1 id="no-redirect"> Not being redirected? <a href="https://discord.com/oauth2/authorize?client_id=788801745752293386&permissions=269675574&scope=bot">Click here</a> </h1>
-        
+        <p id="info"> You will be redirected to our home in <b><span id="countdown">15</span></b>
+	
 	<noscript>
 		You need to enable JavaScript.
 	</noscript>
 
         <script>
+	function pageRedirect() {
+        window.location.replace("https://sixcord.xyz/");
+    }      
+    setTimeout("pageRedirect()", 15000);
+		
+    var seconds = document.getElementById("countdown").textContent;
+    var countdown = setInterval(function() {
+    seconds--;
+    document.getElementById("countdown").textContent = seconds;
+    if (seconds <= 0) clearInterval(countdown);
+}, 1000);
+		
             window.open("https://discord.com/oauth2/authorize?client_id=788801745752293386&permissions=269675574&scope=bot", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=500,height=600");
         </script>
             
