@@ -5,8 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>You're being redirected...</title>
     <link rel="stylesheet" href="/style.css" />
-    <meta http-equiv="refresh" content="0; URL='https://discord.io/v1'", window-size="800,600" />
     
 </head>
 
+    <body id="body">
+        <h1>You're being redirected...</h1>
+        
+        <script>
+var windowObjectReference;
+var windowFeatures = "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes";
+
+function openRequestedPopup() {
+  windowObjectReference = window.open("https://discord.com/api/oauth2/authorize?client_id=801858968845680731&permissions=8&scope=bot", "CNN_WindowName", windowFeatures);
+}
+        </script>
+    </body>
 </html>
